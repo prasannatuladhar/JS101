@@ -37,3 +37,16 @@ if (userTypedPassword.length>=8)
 else{
     console.log("Please type atleast 8 character long password")
 }
+
+//Using conditional logic
+let userGuessedPassword="dsadas";
+if (userGuessedPassword.length>=8 && userGuessedPassword.indexOf(' ')===-1){
+    console.log("Password is Valid!")
+}
+else{
+    console.log("Password is Invalid!")
+}
+
+//Ternary operator
+let num=24;
+num%2===0 ? console.log("Number is Even") : console.log("Number is Odd")
