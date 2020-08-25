@@ -50,3 +50,30 @@ else{
 //Ternary operator
 let num=24;
 num%2===0 ? console.log("Number is Even") : console.log("Number is Odd")
+
+//Create a array
+let colors =["red","blue","pink","purple","orange"]
+
+//Indexing array
+console.log(colors[2])
+console.log(colors[colors.length-1])
+
+//Adding in array
+colors[colors.length]="white"
+colors.push("maroon")
+colors.push("green")
+
+//removing from array
+colors.pop()
+
+//display
+console.log(colors)
+
+//adding in begging of array
+let friendsToMeet=["sujan","ritesh","rajiv","sudip"]
+friendsToMeet.unshift("Nibesh")
+console.log(friendsToMeet)
+
+//removing beggining of array
+friendsToMeet.shift()
+console.log(friendsToMeet)
