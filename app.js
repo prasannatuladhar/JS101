@@ -129,3 +129,52 @@ console.log(info['1'])
 info['hobby']='gaming'
 info.lazy=false
 console.log(info)
+
+
+//For loop
+
+for(let i=1;i<=10;i++){
+    console.log(`${i}*${i}=${i*i}`)
+}
+
+//For loop for Array
+const heros = ["Superman","Batman","IronMan","Hulk","Black Panther"]
+for (i=0;i<heros.length;i++){
+    console.log(heros[i])
+}
+
+
+//For loop for dictionary
+const newHeros = [
+{name:"Dr.Strange",
+age:25},
+{name:"AntMan",
+age:15},
+{name:"DustMan",
+age:20}
+]
+
+let avgYear=0;
+for(i=0;i<newHeros.length;i++){
+    console.log(`${newHeros[i].name} is ${newHeros[i].age} years old`)
+    avgYear+=newHeros[i].age
+}
+console.log(`Average age of these heroes is ${avgYear/newHeros.length} `)
+
+// Nested For loop
+const gameBoard = [
+    [4,32,8,4],
+    [64,8,32,2],
+    [8,32,16,4],
+    [2,8,4,2]
+
+]
+let totalScore = 0;
+for (i=0;i<gameBoard.length;i++){
+    row=gameBoard[i]
+    console.log(row)
+    for(j=0;j<row.length;j++){
+        totalScore += row[j]
+    }
+}
+console.log(totalScore)
